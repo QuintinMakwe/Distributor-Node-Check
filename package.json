@@ -1,0 +1,17 @@
+{
+  "name": "joystreamTask",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "tsc && node src/script.js"
+  },
+  "dependencies": {
+    "puppeteer": "^14.3.0",
+    "puppeteer-har": "^1.1.2"
+  },
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^4.7.3"
+  }
+}
