@@ -5,14 +5,19 @@ export interface singleDistributorType {
     timeToRender: number,
     responseTimeAfterLatencyHasBeenRemoved: number
 }
+
+export interface dynamicObj {
+    [key: string]: string | number
+}
+
 export interface harFileResult {
     log: {
         version: string,
         creator: {
-            [key: string]: string | number | Object
+            [key: string]: string | number | dynamicObj
         },
-        pages: Array<{ [key: string]: string | number | Object }>,
-        entries: Array<{ [key: string]: string | number | Object }>
+        pages: Array<{ [key: string]: string | number | dynamicObj }>,
+        entries: Array<{ [key: string]: string | number | dynamicObj }>
     },
 
 }
